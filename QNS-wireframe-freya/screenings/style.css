@@ -1,0 +1,103 @@
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+}
+
+#wrapper{
+	max-width: 1280px;
+	margin: 0 25px;
+	border: 1px solid black;
+}
+
+nav{
+	height: 80px;
+	width: 100%;
+	background-color:yellow;
+}
+
+.logo h1{
+	font-size: 42px;
+	color: red;
+	font-weight:800;
+	background-color: blue;
+	padding: 20px 10px 20px 10px;
+	width: 15%;
+	height: 40px;
+	float:left;
+	text-align:center;
+}
+
+.nav-item{
+	width:auto;
+	height:40px;
+	padding-top: 40px 10px;
+	float:right;
+	text-align:center;
+	margin: 0 5px;
+	background-color: yellow;
+	padding: 40px 10px 0px 10px;
+}
+
+.nav-item a{
+	float:right;
+	width: 5%;
+	height: 20px;
+
+}
+
+.social-buttons{
+	width: 20%;
+	height: 40px;
+	float: right;
+}
+
+.nav-item-social{
+	float:right;
+	background-color:blue;
+	padding-top:40px;
+	width:2%;
+	height: 40px;
+	text-align: center;
+}
+
+#container{
+	width: 1280;
+	margin: 0 auto;
+	background-color: grey;
+}
+
+.main .section{
+	height:250px;
+	width: auto;
+	padding: 10px 0px;
+	background-color: red;
+}
+
+footer{
+	height: 100px;
+	width: 100%;
+	background-color: pink;
+}
