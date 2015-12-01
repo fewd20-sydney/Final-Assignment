@@ -1,0 +1,588 @@
+/*
+Project Name: Final Project
+Client: Homecamp
+Author: Audrey Krukoff
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body{
+     margin: 0;
+     color: #000;
+     font-size: 14px;
+     line-height: 22px;
+     font-family: "Open Sans", sans-serif;
+     height: 100%;
+}
+
+.nav{
+      margin-bottom:0;
+      border:none;
+      position:absolute;
+      width:100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      z-index:1000
+}
+
+
+
+.nav a{
+     font-size: 14px;
+     text-decoration: none;
+     color: white;
+     font-weight: 600;
+     display: block;
+}
+
+.nav-header{
+    margin-top: 25px;
+}
+
+.nav-header ul{
+     float: right;
+     overflow: hidden;
+}
+
+.nav-menu-right li {
+     text-align: center;
+     float: left;
+     display: inline;
+}
+
+.nav-menu-right li a{
+     margin-left: 15px;
+}
+
+#logohomecamp{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+}
+
+.home{
+     position: relative;
+     background-color: #004052;
+     background-size: 100%;
+     width: 100%;
+     overflow: hidden;
+}
+
+.home img{
+    z-index: -1;
+}
+
+.home-content{
+     position:absolute;
+     width:100%;
+     height:100%;
+     left:0;
+     top:0;
+     text-align:center;
+     padding:160px 0 10px 0;
+}   
+
+.title-font{
+     font-family:'futura_ltbold', sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.medium-font{
+     font-family:"Open Sans";
+     font-weight: 600;
+}
+
+.middcontainer{
+     margin-right: 200px;
+     margin-left: 200px;
+     padding-left: auto;
+     padding-right: auto;
+}
+
+.form-group{
+     position: relative;
+     margin-bottom: 35px;
+}
+
+.form-control{
+     display: block;
+     width: 100%;
+     height: 50px;
+     padding: 6px 12px;
+     font-size: 18px;
+     color: #555555;
+     background-color: #fff;
+     opacity: 0.8;
+     border: none;
+     margin-top: 10px;
+     border-radius: 2px;
+}
+
+.form-control:focus{
+     outline: 0;
+}
+
+.btn-green-form{
+     color: #041533;
+     display: block;
+     font-size: 16px;
+     font-weight: 600;
+}
+
+.form-carousel .btn-green-form:hover{
+     background: #4afed0;
+}
+
+
+.form-carousel .btn-green-form{
+     position: absolute;
+     right: 0;
+     top: 0;
+     height: 100%;
+     border-radius: 0px 2px 2px 0px;
+     padding: 13px 50px;
+     background: #23debf;
+     border: none;
+}
+
+.mini-info{
+     font-size: 12px;
+
+}
+
+.mini-info a{
+     font-family:"Open Sans";
+     font-weight: 600;
+     text-decoration: none;
+     color: white;
+}
+
+.mini-info a:hover{
+     text-decoration: underline;
+}
+
+.mini-info a:visited{
+     text-decoration: underline;
+     color: white;
+}
+
+.btn-purple {
+     background:#4d3db2;
+     border-color:#4d3db2;
+     border-radius:20px;
+     color:#ffffff;
+     padding:2px 20px;
+}
+
+.btn-purple:hover{
+     color:#ffffff;
+     background:#695cbb;
+     border-color:#695cbb
+}
+
+h1{ 
+     font-family:'futura_ltbold',sans-serif;
+     font-size: 40px;
+     color: white;
+     line-height: 50px;
+}
+
+h2{
+    font-family:'futura_ltbold', sans-serif;
+    font-size: 30px;
+    color: #464646; 
+    text-transform: uppercase;
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    font-size: 24px;
+    font-family:"Open Sans";
+    font-weight: 600;
+}
+
+h5{
+    color: #b7b7b7;
+    font-size: 14px;
+    font-family:"Open Sans";
+    font-weight: 700; 
+}
+
+h6{
+     color: white;
+     font-size: 14px;
+     bottom: 10px;
+     margin-bottom: 0px;
+}
+
+.section-grey{
+     background: #ecf1f3;
+     padding: 50px 0px;
+}
+
+.listing-holder .row{
+    background: #ecf1f3;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.simple-listing{
+    float: left;
+}
+
+.listing-inner{
+    height: 320px;
+    padding: 20px;
+    text-align: center;
+    background-size:100% auto; 
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .listing-inner{
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px){
+    .simple-listing{
+        margin-top: 20px;
+    }
+    .double-listing{
+        margin-top: 20px;
+    }
+}
+
+.va-middle{
+    vertical-align: middle;
+    line-height: 20px;
+    padding-top: 50px;
+}
+
+.inner-green{
+    background-color: #23debf;
+    height: 320px;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+.portrait-image{
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.simple-listing a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-green{
+    border-radius: 2px;
+    padding: 10px 30px;
+    background: #23debf;
+    border: none;
+    color: #464646;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-green:hover{
+    background: #4afed0;
+}
+
+.double-listing a{
+    text-decoration: none;
+    color: white;
+}
+
+.double-listing h3{
+    line-height: 220px;
+}
+
+.inner-green h3{
+    line-height: 220px;
+}
+
+.inner-green:hover{
+    background: #4afed0;
+}
+
+.link-bottom{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mini-info-grey p{
+    color: #464646;
+}
+
+.mini-info-grey a{
+     font-family:"Open Sans";
+     font-weight: 600;
+     text-decoration: none;
+     color: #464646;
+}
+
+.mini-info-grey a:hover{
+     text-decoration: underline;
+}
+
+.mini-info-grey a:visited{
+     text-decoration: underline;
+     color: #464646;
+}
+
+.section-mint{
+     background: #bffff2;
+     padding: 50px 0px;
+}
+
+.carousel-text-holder{
+    text-align: center;
+    background: url(../images/bg/text-carousel-bg.jpg)
+}
+
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+.color-white{
+    color: white;
+}
+
+.carousel-content{
+    color: white;
+}
+
+.carousel-text-holder h2{
+    font-family:'futura_ltbold', sans-serif;
+    font-size: 30px;
+    color: white; 
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.color-dark-blue{
+    color: #041533;
+}
+
+.color-dark-gray{
+    color: #464646;
+}
+
+.media-body{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.media-body .media-heading{
+    font-size: 24px;
+    font-family:"Open Sans";
+    font-weight: 800;
+    color: #041533;
+}
+
+.section-mint .media img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-white{
+     background: white;
+     padding: 50px 0px;
+}
+
+.section-white h3{
+    margin-bottom: 50px;
+}
+
+.btn-fb-blue{
+    border-radius: 25px;
+    padding: 10px 50px;
+    background: #3a5b97;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-fb-blue:hover{
+    background: #5374af;
+    text-decoration: none;
+    color: white;
+}
+
+.text-divider{
+    text-align:center;
+    margin:20px 0 20px 0;
+    color:#b7b7b7;
+    font-weight:700;
+    position:relative
+}
+.text-divider:before,.text-divider:after{
+    content:'';
+    height:1px;
+    background:#a1a1a1;
+    display:block;
+    width:42%;
+    position:absolute;
+    top:50%
+}
+
+.text-divider:before{
+    left:0
+}
+
+.text-divider:after{
+    right:0
+}
+
+.signup-inner-holder{
+    width:100%;
+    max-width:310px;
+    margin:0 auto
+}
+
+.btn-mail-white{
+    border-radius: 25px;
+    padding: 10px 50px;
+    background: white;
+    border: solid 1px #464646;
+    color: #464646;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-mail-white:hover{
+    background: #c2c2c2;
+    text-decoration: none;
+    color: #464646;
+}
+
+.list-logos{
+    text-align:center
+}
+
+.list-logos li{
+    width:24%;
+    display:inline-block
+}
+
+@media only screen and (max-width: 767px){
+    .list-logos li{
+        width:49%;
+    }
+}
+
+.list-logos li>a:hover img{
+    opacity:1
+}
+
+.list-logos li>a>img{
+    max-width:100%;
+    opacity:0.4;
+}
+
+footer{
+    color:#b7b7b7;
+    padding:30px 0 25px 0;
+    background:url(../images/bg/footer-bg.jpg) no-repeat center center/cover;
+}
+
+@media only screen and (max-width: 767px){
+    footer{
+        text-align:center;
+    }
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer ul>li>a{
+    color: #b7b7b7;
+    list-style: none;
+}
+
+footer ul>li>a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-top{
+    margin-bottom:40px
+}
+
+.top-top ul>li{
+    list-style: none;
+}
+
+#imgcenter li{
+    display: inline-block;
+    margin:0 29px 10px 0;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 767px){
+    .top-top{
+        margin-bottom:20px;
+    }
+}
+
+.top-part{
+    padding:0 180px
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@font-face{
+     font-family:'futura_ltbold';
+     src: url('../fonts/futuralt-bold-webfont.eot');
+     src:url('../fonts/futuralt-bold-webfont.eot?#iefix') 
+     format('embedded-opentype'),url('../fonts/futuralt-bold-webfont.woff2') 
+     format('woff2'),url('../fonts/futuralt-bold-webfont.woff') 
+     format('woff'),url('../fonts/futuralt-bold-webfont.ttf') 
+     format('truetype'),url('../fonts/futuralt-bold-webfont.svg#futura_ltbold') 
+}
