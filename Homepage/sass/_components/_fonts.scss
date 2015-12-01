@@ -1,0 +1,66 @@
+/* FONTS */
+
+//Futura LT bold
+@font-face {
+    font-family: 'futura_ltbold';
+    src: url('../fonts/futuralt-bold-webfont.eot');
+    src: url('../fonts/futuralt-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futuralt-bold-webfont.woff2') format('woff2'),
+         url('../fonts/futuralt-bold-webfont.woff') format('woff'),
+         url('../fonts/futuralt-bold-webfont.ttf') format('truetype'),
+         url('../fonts/futuralt-bold-webfont.svg#futura_ltbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//Fontello
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?85477627');
+  src: url('../fonts/fontello.eot?85477627#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?85477627') format('woff'),
+       url('../fonts/fontello.ttf?85477627') format('truetype'),
+       url('../fonts/fontello.svg?85477627#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class^="homecamp-icon-"]:before, [class*=" homecamp-icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.homecamp-icon-social-youtube:before { content: '\e800'; } /* '' */
+.homecamp-icon-social-twitter:before { content: '\e801'; } /* '' */
+.homecamp-icon-social-pinterest:before { content: '\e802'; } /* '' */
+.homecamp-icon-social-linkedin:before { content: '\e803'; } /* '' */
+.homecamp-icon-social-insta:before { content: '\e804'; } /* '' */
+.homecamp-icon-social-google:before { content: '\e805'; } /* '' */
+.homecamp-icon-homepagebills:before { content: '\e806'; } /* '' */
+.homecamp-icon-social-facebook:before { content: '\e807'; } /* '' */
+.homecamp-icon-homepage-van:before { content: '\e808'; } /* '' */
+.homecamp-icon-homepage-pig:before { content: '\e809'; } /* '' */
+.homecamp-icon-homepage-montain:before { content: '\e80a'; } /* '' */
+.homecamp-icon-homepage-map:before { content: '\e80b'; } /* '' */
+.homecamp-icon-homepage-discover:before { content: '\e80c'; } /* '' */
+.homecamp-icon-button-play:before { content: '\e80d'; } /* '' */
+.homecamp-icon-menu:before { content: '\e80e'; } /* '' */
+.homecamp-icon-cancel:before { content: '\e80f'; } /* '' */
+.homecamp-icon-facebook:before { content: '\e810'; } /* '' */
+.homecamp-icon-gplus:before { content: '\e811'; } /* '' */
+.homecamp-icon-check-empty:before { content: '\e812'; } /* '' */
+.homecamp-icon-check-1:before { content: '\e813'; } /* '' */
+
+
